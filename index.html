@@ -3,295 +3,361 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tridle - Ultimate Triple Word Puzzle Challenge | Three Times the Fun</title>
-    <meta name="description" content="Master Tridle, the innovative triple Wordle challenge! Test your word skills by solving three puzzles simultaneously. Perfect for word game enthusiasts seeking an extra challenge. Play daily for free!">
-    
-    <!-- Tailwind CDN -->
+    <title>Waffle Unlimited - Free Infinite Word Puzzle Game | Play Daily Brain Teasers</title>
+    <meta name="description" content="Play Waffle Unlimited, the free infinite word puzzle game. Challenge yourself with endless puzzles, rearrange letters to form words, and improve your vocabulary. Perfect for word game enthusiasts and puzzle lovers!">
     <script src="https://cdn.tailwindcss.com"></script>
-    
-    <!-- Enhanced SEO Meta Tags -->
-    <meta name="keywords" content="tridle game, triple wordle, word puzzle game, daily word game, brain training, vocabulary game, word challenge, multiplayer wordle, educational game, word guessing game">
-    <meta property="og:title" content="Tridle - Ultimate Triple Word Puzzle Challenge">
-    <meta property="og:description" content="Experience the ultimate word puzzle challenge with Tridle - solve three Wordle puzzles simultaneously! Perfect for word game enthusiasts and puzzle lovers.">
+    <!-- 添加favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <!-- Open Graph tags for better social sharing -->
+    <meta property="og:title" content="Waffle Unlimited - Free Infinite Word Puzzle Game">
+    <meta property="og:description" content="Challenge yourself with unlimited word puzzles. Rearrange letters, form words, and improve your vocabulary with this addictive puzzle game!">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Tridle Game">
-    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="/waffle-preview.png">
+
+    <!-- Enhanced SEO Meta Tags -->
+    <meta name="keywords" content="waffle game, word puzzle, brain teaser, vocabulary game, educational game, word games, free online games, daily puzzles">
+    <meta name="author" content="Waffle Unlimited">
     <meta name="robots" content="index, follow">
-    <meta name="author" content="Tridle Game">
-    <link rel="canonical" href="https://yourdomain.com/igames/tridle/">
-    
+    <link rel="canonical" href="https://yourdomain.com/igames/waffle/" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Waffle Unlimited - Free Word Puzzle Game">
+    <meta name="twitter:description" content="Play unlimited word puzzles for free! Perfect for word game lovers.">
+    <meta name="twitter:image" content="/waffle-preview.png">
+
+    <!-- Custom Styles for Enhanced Mobile Experience -->
     <style>
-        /* Enhanced Mobile Responsiveness */
+        /* 基础样式 */
+        .game-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            aspect-ratio: 4/3;
+        }
+        
+        .game-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 8px;
+        }
+        
         @media (max-width: 640px) {
             .game-container {
-                aspect-ratio: 9/16;
-                margin: 0 auto;
-                width: 95%;
-            }
-            .text-responsive {
-                font-size: 0.9rem;
-            }
-        }
-        @media (min-width: 641px) and (max-width: 1024px) {
-            .game-container {
                 aspect-ratio: 3/4;
-                width: 90%;
             }
         }
-        @media (min-width: 1025px) {
-            .game-container {
-                aspect-ratio: 4/5;
-                width: 85%;
-            }
+
+        /* 内容容器 */
+        .content-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
         }
-        /* Smooth Scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Enhanced Accessibility */
-        :focus {
-            outline: 2px solid #4F46E5;
-            outline-offset: 2px;
+
+        /* 防止文本溢出 */
+        .text-content {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
     </style>
 </head>
 <body class="bg-gray-50">
-    <main class="flex-1 py-2 sm:py-3">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <!-- Enhanced Game Section -->
-            <div class="w-full flex flex-col items-center p-2 sm:p-4">
-                <div class="w-full max-w-md sm:max-w-lg md:max-w-xl game-container relative">
+    <!-- 导航栏 -->
+    <header class="bg-amber-800 text-white py-4">
+        <div class="content-wrapper flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Waffle Unlimited</h1>
+            <nav>
+                <button class="px-4 py-2 hover:bg-amber-700 rounded">How to Play</button>
+                <button class="px-4 py-2 hover:bg-amber-700 rounded">Statistics</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 主要内容区域 -->
+    <main class="py-8">
+        <div class="content-wrapper">
+            <!-- 游戏区域 -->
+            <section class="mb-12">
+                <div class="game-container">
                     <iframe
-                        title="Tridle - Triple Word Puzzle Challenge"
-                        src="https://html5-games.io/data/file/html5/tridle/tridle/"
-                        class="absolute top-0 left-0 w-full h-full border-0 rounded-lg shadow-lg bg-white"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
+                        title="Waffle Unlimited Game"
+                        src="https://waffleunlimited.com/waffle-unlimited.embed"
+                        allowFullScreen
                     ></iframe>
                 </div>
-            </div>
+            </section>
 
-            <!-- Enhanced Intro Section -->
-            <div class="mt-12 flex flex-col items-center px-4 sm:px-6 lg:px-8">
-                <!-- Enhanced Header Section -->
-                <div class="w-full max-w-4xl text-center space-y-8 mb-12">
-                    <h1 class="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight">
-                        Tridle: The Ultimate Triple Word Puzzle Challenge
-                    </h1>
-                    <p class="text-xl text-gray-600 leading-relaxed">
-                        Welcome to Tridle, where word puzzle enthusiasm meets strategic thinking! Experience the thrill of solving 
-                        three interconnected Wordle puzzles simultaneously. Each carefully planned guess affects all three puzzles, 
-                        creating a uniquely challenging and engaging word game experience that will test your vocabulary, strategic 
-                        thinking, and problem-solving skills.
+            <!-- 游戏介绍 -->
+            <section class="max-w-4xl mx-auto mb-12 text-content">
+                <h2 class="text-3xl font-bold text-amber-800 mb-6 text-center">Welcome to Waffle Unlimited</h2>
+                <p class="text-gray-700 mb-4">
+                    Challenge yourself with our infinite word puzzle game! Unlike traditional word games,
+                    Waffle Unlimited provides all the letters you need - you just need to arrange them correctly.
+                </p>
+            </section>
+
+            <!-- 游戏说明 -->
+            <section class="max-w-4xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-6 text-content">
+                <h2 class="text-2xl font-bold text-amber-800 mb-4">How to Play</h2>
+                <div class="space-y-4">
+                    <p class="text-gray-700">
+                        Rearrange the letters to form valid words both horizontally and vertically.
+                        Each move counts, so plan carefully!
                     </p>
-                    <div class="text-lg text-gray-700 mt-4">
-                        🎯 Daily Challenges | 🧩 Triple the Puzzles | 🏆 Global Community
+                    <!-- 游戏规则列表 -->
+                    <ul class="list-disc pl-5 space-y-2 text-gray-700">
+                        <li>All letters are provided at the start</li>
+                        <li>Create valid words horizontally and vertically</li>
+                        <li>Complete the puzzle in 15 moves or less</li>
+                        <li>Aim for a perfect score with 12 moves or fewer</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- 颜色指南 -->
+            <section class="max-w-4xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-amber-800 mb-4">Color Guide</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="p-4 bg-amber-50 rounded">
+                        <div class="w-8 h-8 bg-[#89520f] rounded mb-2"></div>
+                        <h3 class="font-bold mb-2">Deep Gold</h3>
+                        <p class="text-sm text-gray-600">Correctly placed letters</p>
+                    </div>
+                    <div class="p-4 bg-amber-50 rounded">
+                        <div class="w-8 h-8 bg-[#d7ab52] rounded mb-2"></div>
+                        <h3 class="font-bold mb-2">Light Gold</h3>
+                        <p class="text-sm text-gray-600">Right letter, wrong position</p>
+                    </div>
+                    <div class="p-4 bg-amber-50 rounded">
+                        <div class="w-8 h-8 bg-gray-300 rounded mb-2"></div>
+                        <h3 class="font-bold mb-2">Gray</h3>
+                        <p class="text-sm text-gray-600">Letter in wrong row/column</p>
                     </div>
                 </div>
+            </section>
 
-                <!-- Enhanced Main Content -->
-                <div class="max-w-6xl w-full space-y-8">
-                    <div class="bg-white p-6 lg:p-8 rounded-xl shadow-sm border border-gray-100">
-                        <!-- Enhanced How to Play Section -->
-                        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">
-                            Master the Art of Tridle
-                        </h2>
-                        <div class="space-y-6 mb-12">
-                            <div class="bg-amber-50 p-6 rounded-lg">
-                                <h3 class="text-xl font-semibold text-gray-800 mb-3">The Triple Challenge Experience</h3>
-                                <p class="text-gray-600 leading-relaxed">
-                                    Immerse yourself in a unique word puzzle experience where three distinct five-letter words await 
-                                    your discovery. Unlike traditional word games, Tridle presents you with three separate Wordle grids, 
-                                    each concealing its own mystery word. The innovative twist? Every word you enter becomes a simultaneous 
-                                    guess for all three puzzles, creating a fascinating interplay of strategy and vocabulary skills.
-                                </p>
-                            </div>
-
-                            <div class="bg-amber-50 p-6 rounded-lg">
-                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Understanding Color Feedback</h3>
-                                <div class="space-y-4">
-                                    <p class="text-gray-600 mb-4">
-                                        Master the color-coded feedback system to track your progress across all three puzzles:
-                                    </p>
-                                    <ul class="text-gray-600 space-y-3">
-                                        <li class="flex items-center">
-                                            <span class="w-6 h-6 bg-green-500 rounded mr-3"></span>
-                                            <span><strong>Green Square:</strong> Perfect match! The letter is exactly where it should be in the word.</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <span class="w-6 h-6 bg-yellow-500 rounded mr-3"></span>
-                                            <span><strong>Yellow Square:</strong> Right letter, wrong spot - this letter appears in the word but needs to be relocated.</span>
-                                        </li>
-                                        <li class="flex items-center">
-                                            <span class="w-6 h-6 bg-gray-300 rounded mr-3"></span>
-                                            <span><strong>Gray Square:</strong> This letter doesn't appear in the target word at all.</span>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <div class="bg-amber-50 p-6 rounded-lg">
-                                <h3 class="text-xl font-semibold text-gray-800 mb-3">Path to Victory</h3>
-                                <div class="text-gray-600 space-y-4">
-                                    <p>
-                                        Your mission is to uncover all three words within the allocated attempts. Each guess must be:
-                                    </p>
-                                    <ul class="list-disc pl-6 space-y-2">
-                                        <li>A valid five-letter word from the English dictionary</li>
-                                        <li>Strategic enough to provide useful information for all three puzzles</li>
-                                        <li>Carefully considered, as each guess counts toward all three solutions</li>
-                                    </ul>
-                                    <p class="mt-4">
-                                        Victory is achieved only when all three words are correctly identified, making Tridle 
-                                        a true test of word mastery and strategic thinking.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Enhanced Strategy Section -->
-                        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 mt-16 text-center">
-                            Advanced Strategies for Success
-                        </h2>
-                        <div class="space-y-6">
-                            <div class="border-b border-gray-100 pb-6">
-                                <h3 class="text-xl font-semibold text-gray-800 mb-4">Master Strategic Approaches</h3>
-                                <div class="grid md:grid-cols-2 gap-6">
-                                    <div>
-                                        <h4 class="font-medium text-gray-800 mb-2">Initial Strategy</h4>
-                                        <ul class="text-gray-600 list-disc pl-5 space-y-2">
-                                            <li>Begin with vowel-rich words to gather maximum information</li>
-                                            <li>Use common consonant combinations in early guesses</li>
-                                            <li>Pay attention to letter frequency patterns</li>
-                                            <li>Consider words with repeated letters carefully</li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-medium text-gray-800 mb-2">Mid-Game Tactics</h4>
-                                        <ul class="text-gray-600 list-disc pl-5 space-y-2">
-                                            <li>Analyze feedback patterns across all three grids</li>
-                                            <li>Identify common letters between puzzles</li>
-                                            <li>Focus on the puzzle with the most information</li>
-                                            <li>Use process of elimination effectively</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="border-b border-gray-100 pb-6">
-                                <h3 class="text-xl font-semibold text-gray-800 mb-4">Expert Techniques</h3>
-                                <div class="space-y-4 text-gray-600">
-                                    <p>
-                                        Advanced players often employ sophisticated strategies to maximize their chances of success:
-                                    </p>
-                                    <ul class="list-disc pl-6 space-y-3">
-                                        <li>
-                                            <strong>Information Maximization:</strong> Choose initial words that can provide 
-                                            valuable feedback for multiple potential solutions.
-                                        </li>
-                                        <li>
-                                            <strong>Pattern Recognition:</strong> Look for common prefixes, suffixes, and letter 
-                                            combinations that might appear across multiple puzzles.
-                                        </li>
-                                        <li>
-                                            <strong>Strategic Sacrifice:</strong> Sometimes it's worth using a guess that might 
-                                            only help with one puzzle if it could lead to a crucial breakthrough.
-                                        </li>
-                                        <li>
-                                            <strong>Endgame Management:</strong> As you near your final guesses, prioritize 
-                                            solving the puzzle with the most complete information first.
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Enhanced FAQ Section -->
-                        <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 mt-16 text-center">
-                            Frequently Asked Questions
-                        </h2>
-                        <div class="space-y-6">
-                            <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
-                                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">
-                                    How many attempts do I get to solve all three puzzles?
-                                </h3>
-                                <div class="text-gray-600 px-4 pb-4">
-                                    Players have a set number of attempts to solve all three puzzles. This limitation adds 
-                                    an exciting strategic element to the game, as you must carefully consider each guess to 
-                                    maximize information gained across all three puzzles. The specific number of attempts 
-                                    is designed to provide a challenging yet achievable goal for players of all skill levels.
-                                </div>
-                            </div>
-
-                            <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
-                                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">
-                                    Is there any connection between the three daily words?
-                                </h3>
-                                <div class="text-gray-600 px-4 pb-4">
-                                    While the three words are carefully selected each day, they are typically independent 
-                                    of each other. This independence adds to the challenge, as you can't rely on thematic 
-                                    connections to solve the puzzles. However, the words are chosen to ensure a fair and 
-                                    engaging gameplay experience, with each puzzle being solvable within the given attempts.
-                                </div>
-                            </div>
-
-                            <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
-                                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">
-                                    What makes Tridle different from other word games?
-                                </h3>
-                                <div class="text-gray-600 px-4 pb-4">
-                                    Tridle stands out with its unique triple-puzzle mechanic, where every guess impacts 
-                                    three separate word puzzles simultaneously. This innovative approach requires players 
-                                    to think strategically about each guess, considering its potential impact across all 
-                                    three grids. The game combines the familiar enjoyment of word puzzles with an added 
-                                    layer of strategy and complexity.
-                                </div>
-                            </div>
-
-                            <div class="bg-white rounded-xl border border-gray-100 overflow-hidden">
-                                <h3 class="text-lg font-semibold text-gray-900 p-4 pb-2">
-                                    How often are new puzzles available?
-                                </h3>
-                                <div class="text-gray-600 px-4 pb-4">
-                                    Following the beloved tradition of daily word games, Tridle refreshes with new puzzles 
-                                    every 24 hours at midnight. This daily format creates a shared experience among players 
-                                    worldwide, as everyone tackles the same set of puzzles each day. Mark your calendar and 
-                                    make Tridle part of your daily mental workout routine!
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- New Community Section -->
-                        <div class="mt-16">
-                            <h2 class="text-2xl lg:text-3xl font-bold text-gray-900 mb-8 text-center">
-                                Join the Tridle Community
-                            </h2>
-                            <div class="bg-blue-50 p-6 rounded-lg">
-                                <p class="text-gray-700 text-center leading-relaxed">
-                                    Become part of our growing community of word puzzle enthusiasts! Share your strategies, 
-                                    compare scores, and challenge friends to beat your solving time. Follow us on social 
-                                    media for daily tips, special challenges, and community events.
-                                </p>
-                                <div class="mt-6 flex justify-center space-x-4">
-                                    <span class="text-blue-600 hover:text-blue-700 cursor-pointer">#TridleChallenge</span>
-                                    <span class="text-blue-600 hover:text-blue-700 cursor-pointer">#DailyTridle</span>
-                                    <span class="text-blue-600 hover:text-blue-700 cursor-pointer">#WordPuzzle</span>
-                                </div>
-                            </div>
-                        </div>
+            <!-- 游戏特点 -->
+            <section class="max-w-4xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-amber-800 mb-6">Game Features</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-amber-50 rounded-lg p-4">
+                        <h3 class="font-bold text-lg mb-3 text-amber-800">Unlimited Puzzles</h3>
+                        <p class="text-gray-700">
+                            Unlike other word games that limit you to one puzzle per day, Waffle Unlimited 
+                            lets you play as many times as you want. Perfect for improving your skills or 
+                            just enjoying more word puzzles!
+                        </p>
+                    </div>
+                    <div class="bg-amber-50 rounded-lg p-4">
+                        <h3 class="font-bold text-lg mb-3 text-amber-800">Skill-Based Scoring</h3>
+                        <p class="text-gray-700">
+                            Each puzzle can be solved in 15 moves or fewer. Challenge yourself to achieve 
+                            the perfect score by completing puzzles in 12 moves or less. Track your progress 
+                            and watch your skills improve!
+                        </p>
+                    </div>
+                    <div class="bg-amber-50 rounded-lg p-4">
+                        <h3 class="font-bold text-lg mb-3 text-amber-800">Educational Value</h3>
+                        <p class="text-gray-700">
+                            Enhance your vocabulary and problem-solving skills while having fun. Each puzzle 
+                            introduces new words and patterns, making it an excellent tool for language learning 
+                            and cognitive development.
+                        </p>
+                    </div>
+                    <div class="bg-amber-50 rounded-lg p-4">
+                        <h3 class="font-bold text-lg mb-3 text-amber-800">Social Features</h3>
+                        <p class="text-gray-700">
+                            Share your achievements, compete with friends, and join our growing community of 
+                            word puzzle enthusiasts. Compare scores and strategies with players worldwide!
+                        </p>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- 进阶策略 -->
+            <section class="max-w-4xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-amber-800 mb-6">Advanced Strategies</h2>
+                <div class="space-y-6">
+                    <div class="border-l-4 border-amber-500 pl-4">
+                        <h3 class="font-bold text-lg mb-2">Pattern Recognition</h3>
+                        <p class="text-gray-700">
+                            Look for common word patterns and letter combinations. Certain letter sequences 
+                            appear more frequently than others in English words. Learning to recognize these 
+                            patterns will significantly improve your solving speed.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-amber-500 pl-4">
+                        <h3 class="font-bold text-lg mb-2">Intersection Strategy</h3>
+                        <p class="text-gray-700">
+                            Focus on letter intersections first. These crucial points must work in both 
+                            directions, making them valuable starting points for solving the puzzle. Pay 
+                            special attention to vowels at intersections.
+                        </p>
+                    </div>
+                    <div class="border-l-4 border-amber-500 pl-4">
+                        <h3 class="font-bold text-lg mb-2">Move Planning</h3>
+                        <p class="text-gray-700">
+                            Plan your moves in advance. Sometimes, making a seemingly counterintuitive move 
+                            first can set up a sequence of efficient moves later. Think several steps ahead 
+                            to minimize your total move count.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 常见问题 -->
+            <section class="max-w-4xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-amber-800 mb-6">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="font-bold text-lg mb-2">How does scoring work?</h3>
+                        <p class="text-gray-700">
+                            Each puzzle can be solved in 15 moves or fewer:
+                        </p>
+                        <ul class="list-disc pl-5 mt-2 space-y-1 text-gray-700">
+                            <li>Perfect Score: 12 moves or fewer</li>
+                            <li>Great Score: 13-14 moves</li>
+                            <li>Completed: 15 moves</li>
+                            <li>Incomplete: More than 15 moves</li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="font-bold text-lg mb-2">Can I play on mobile devices?</h3>
+                        <p class="text-gray-700">
+                            Yes! Waffle Unlimited is fully optimized for mobile play. The interface 
+                            automatically adjusts to your screen size, making it easy to play on any device.
+                        </p>
+                    </div>
+                    <div class="bg-gray-50 rounded-lg p-4">
+                        <h3 class="font-bold text-lg mb-2">Are all words common English words?</h3>
+                        <p class="text-gray-700">
+                            Yes, we use a curated dictionary of common English words. You won't encounter 
+                            obscure or archaic terms, making the game accessible for players of all skill levels.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 游戏技巧 -->
+            <section class="max-w-4xl mx-auto mb-12 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-2xl font-bold text-amber-800 mb-6">Tips for Success</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-lg text-amber-700">For Beginners</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Start with obvious word patterns you recognize</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Focus on one section at a time</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Use the color hints to guide your moves</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Don't be afraid to undo moves if needed</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="font-bold text-lg text-amber-700">For Advanced Players</h3>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Look for letter combinations that could form multiple words</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Plan your moves to minimize swaps</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Study common word patterns to improve speed</span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <span class="text-amber-500">•</span>
+                                <span>Practice efficient move sequences</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+<section class="max-w-4xl mx-auto my-12 bg-white rounded-xl shadow-md p-6">
+  <h2 class="text-2xl font-bold text-center text-gray-900 mb-6">Related Game Sites</h2>
+  <ul class="list-disc pl-6 space-y-3 text-gray-700">
+    <li><a href="https://connectionsunlimited.me" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">connectionsunlimited.me</a>: Addictive word grouping puzzle game to find hidden connections.</li>
+    <li><a href="https://worldle.club" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">worldle.club</a>: Geography-based Wordle variant where players guess countries.</li>
+    <li><a href="https://2048game.space" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">2048game.space</a>: Space-themed variant of 2048, keeping the original merging mechanics.</li>
+    <li><a href="https://sprunky.win" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">sprunky.win</a>: Advanced version of Sprunki featuring complex musical composition tools and extended sound libraries.</li>
+    <li><a href="https://quordle.cc" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">quordle.cc</a>: Solve four Wordle puzzles simultaneously with limited attempts.</li>
+    <li><a href="https://pacman.work" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">pacman.work</a>: Exciting world of Pacman game.</li>
+    <li><a href="https://todaywordle.org" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">todaywordle.org</a>: Daily word guessing game in the style of Wordle.</li>
+    <li><a href="https://letterboxed.me" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">letterboxed.me</a>: Word puzzle game where players connect letters to form words in a box.</li>
+    <li><a href="https://wordlesolver.cc" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">wordlesolver.cc</a>: Tool that helps find possible solutions for Wordle puzzles.</li>
+    <li><a href="https://minesweeper.tv" target="_blank" class="text-purple-700 hover:underline" rel="noopener noreferrer">minesweeper.tv</a>: Logic puzzle game where players clear a minefield using clues.</li>
+  </ul>
+</section>
+
+
+
         </div>
     </main>
 
-    <!-- Enhanced Footer -->
-    <footer class="bg-gray-50 mt-16 py-8">
-        <div class="max-w-7xl mx-auto px-4 text-center text-gray-600">
-            <p class="text-sm">
-                Challenge your mind daily with Tridle - The Ultimate Triple Word Puzzle Experience
-            </p>
+    <!-- 页脚 -->
+    <footer class="bg-amber-800 text-white py-8">
+        <div class="content-wrapper">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="font-bold mb-4">About</h3>
+                    <p class="text-sm text-amber-100">
+                        Waffle Unlimited is an infinite word puzzle game that challenges
+                        your vocabulary and problem-solving skills.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Links</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-amber-200">How to Play</a></li>
+                        <li><a href="#" class="hover:text-amber-200">Daily Challenge</a></li>
+                        <li><a href="#" class="hover:text-amber-200">Statistics</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-4">Connect</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-amber-200">Twitter</a></li>
+                        <li><a href="#" class="hover:text-amber-200">Discord</a></li>
+                        <li><a href="#" class="hover:text-amber-200">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 pt-8 border-t border-amber-700 text-center">
+                <p class="text-sm">© 2025 Waffle Unlimited. All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const iframe = document.querySelector('iframe');
+            if (iframe) {
+                iframe.addEventListener('load', function() {
+                    console.log('Game loaded successfully');
+                });
+            }
+        });
+    </script>
 </body>
 </html> 
